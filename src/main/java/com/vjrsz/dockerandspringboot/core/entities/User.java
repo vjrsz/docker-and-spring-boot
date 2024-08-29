@@ -13,5 +13,7 @@ import java.io.Serializable;
 @EqualsAndHashCode
 public class User implements Serializable {
     private Long id;
-    private String username;
+    private String name;
+    private String email;
+    private String password;
 }

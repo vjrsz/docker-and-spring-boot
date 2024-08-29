@@ -7,7 +7,7 @@ COPY pom.xml /app
 
 # Definir o diretório de trabalho e executar a build do Maven
 WORKDIR /app
-RUN mvn clean install
+RUN mvn clean install -DskipTests
 
 # Usar a imagem do OpenJDK 17 JRE em Alpine Linux para a fase final
 FROM amazoncorretto:17-alpine

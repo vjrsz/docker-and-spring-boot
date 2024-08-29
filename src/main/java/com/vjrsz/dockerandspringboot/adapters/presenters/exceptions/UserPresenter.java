@@ -1,4 +1,7 @@
 package com.vjrsz.dockerandspringboot.adapters.presenters.exceptions;
 
-public class UserPresenter {
-}
+public record UserPresenter(
+    Long id,
+    String name,
+    String email
+) { }
